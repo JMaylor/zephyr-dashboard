@@ -1,0 +1,28 @@
+{
+  "name": "vue3-tailwind-dashboard",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@heroicons/vue": "^1.0.4",
+    "@vueuse/core": "^6.4.1",
+    "@vueuse/motion": "^2.0.0-beta.1",
+    "@vueuse/shared": "^6.4.1",
+    "vue": "^3.2.6",
+    "vue-router": "^4.0.11",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.6.1",
+    "@vue/compiler-sfc": "^3.2.6",
+    "autoprefixer": "^10.3.4",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.15",
+    "unplugin-auto-import": "^0.4.6",
+    "unplugin-vue-components": "^0.15.2",
+    "vite": "^2.5.4"
+  }
+}
