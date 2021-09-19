@@ -21,12 +21,13 @@ const links = [
         text: 'Home',
         to: '/'
       },
+      {
+        text: 'Login',
+        to: '/auth'
+      },
     ]
   },
-  {
-    text: 'Login',
-    to: '/auth'
-  },
+
 ]
 </script>
 

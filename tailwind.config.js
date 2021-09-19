@@ -7,6 +7,9 @@ module.exports = {
   theme: {
     extend: {
       colors,
+      height: {
+        header: 'calc(100vh - 7rem)'
+      }
     },
   },
   variants: {
