@@ -2,7 +2,7 @@
   <div class="relative md:hidden" ref="metaMenu">
     <button
       @click="showMetaMenu = !showMetaMenu"
-      class="text-gray-500 w-10 h-10 focus:outline-none focus-visible:ring rounded-full p-2 transition"
+      class=" w-10 h-10 focus:outline-none focus-visible:ring rounded-full p-2 transition"
     >
       <span class="sr-only">Open secondary menu</span>
       <svg
@@ -22,14 +22,14 @@
     </button>
     <ul
       v-if="showMetaMenu"
-      class="absolute top-16 right-0 p-4 rounded-lg bg-white shadow-md text-gray-500 space-y-4"
+      class="absolute top-16 right-0 p-4 rounded-lg bg-white dark:bg-blueGray-700 shadow-md space-y-4 z-50"
     >
       <CalendarIcon class="h-6" />
       <CogIcon class="h-6" />
       <UserIcon class="h-6" />
     </ul>
   </div>
-  <ul class="hidden md:flex p-4 space-x-6 text-gray-500">
+  <ul class="hidden md:flex p-4 space-x-6 ">
     <CalendarIcon class="h-6" />
     <CogIcon class="h-6" />
     <UserIcon class="h-6" />
