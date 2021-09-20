@@ -11,7 +11,9 @@
     "@vueuse/core": "^6.4.1",
     "@vueuse/motion": "^2.0.0-beta.1",
     "@vueuse/shared": "^6.4.1",
+    "v-calendar": "^3.0.0-alpha.5",
     "vue": "^3.2.6",
+    "vue-chart-3": "^0.5.8",
     "vue-router": "^4.0.11",
     "vuex": "^4.0.2"
   },

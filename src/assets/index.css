@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.vc-container.vc-is-dark {
+  @apply bg-white dark:bg-coolGray-900
+}
