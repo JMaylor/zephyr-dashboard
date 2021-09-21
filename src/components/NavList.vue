@@ -26,6 +26,11 @@ const links = [
     to: '/dashboard',
     icon: 'heroicons-outline:home'
   },
+  {
+    text: 'About',
+    to: '/dashboard/about',
+    icon: 'heroicons-outline:question-mark-circle'
+  },
 ]
 
 const bottomLinks = [
@@ -38,7 +43,7 @@ const bottomLinks = [
 </script>
 
 <style>
-.router-link-active {
+.router-link-exact-active {
   @apply font-bold;
 }
 </style>
