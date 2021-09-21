@@ -27,6 +27,11 @@ const lgAndLarger = breakpoints.greater('lg')
 
 const open = ref(lgAndLarger.value ? true : false)
 
+const route = useRoute()
+watch(route, () => {
+  if (!lgAndLarger.value) open.value = false
+})
+
 const isDark = useDark()
 const toggleDark = useToggle(isDark)
 provide('isDark', isDark)
