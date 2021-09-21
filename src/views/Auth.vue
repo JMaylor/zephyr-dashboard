@@ -7,7 +7,7 @@
         </div>
         <div class="p-8 bg-white rounded-b-2xl md:rounded-l-none md:rounded-r-2xl">
           <div class="flex justify-center items-center h-full">
-            <router-link to="/">Go To Dashboard</router-link>
+            <router-link to="/dashboard">Go To Dashboard</router-link>
           </div>
         </div>
       </div>

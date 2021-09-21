@@ -4,14 +4,20 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      component: () => import("@/views/Home.vue"),
+      component: () => import("@/views/Auth.vue"),
     },
     {
-      path: "/auth",
-      component: () => import("@/views/Auth.vue"),
+      path: "/dashboard",
+      component: () => import("@/layouts/DashboardLayout.vue"),
+      children: [
+        {
+          path: "/dashboard",
+          component: () => import("@/views/Home.vue"),
+        },
+      ],
     },
   ],
   history: createWebHistory(),
 });
 
-export default router
+export default router;

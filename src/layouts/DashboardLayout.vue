@@ -12,7 +12,7 @@
       :class="{ 'lg:pl-80': open && lgAndLarger }"
     >
       <main class="flex-grow">
-        <slot />
+        <router-view />
       </main>
       <footer class="w-full pt-2 border-t border-gray-300 text-center">Hi I'm the footer</footer>
     </div>
@@ -25,7 +25,7 @@ import { breakpointsTailwind } from '@vueuse/core'
 const breakpoints = useBreakpoints(breakpointsTailwind)
 const lgAndLarger = breakpoints.greater('lg')
 
-const open = ref(false)
+const open = ref(lgAndLarger.value ? true : false)
 
 const isDark = useDark()
 const toggleDark = useToggle(isDark)
