@@ -8,8 +8,11 @@ module.exports = {
     extend: {
       colors,
       height: {
-        header: 'calc(100vh - 7rem)'
-      }
+        header: "calc(100vh - 7rem)",
+      },
+      fontFamily: {
+        sans: ["BlinkMacSystemFont", "ui-sans-serif", "system-ui"],
+      },
     },
   },
   variants: {

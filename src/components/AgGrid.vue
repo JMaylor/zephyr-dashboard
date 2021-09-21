@@ -11,4 +11,9 @@ const isDark = inject('isDark')
 @import "../../node_modules/ag-grid-community/dist/styles/ag-grid.css";
 @import "../../node_modules/ag-grid-community/dist/styles/ag-theme-alpine-dark.css";
 @import "../../node_modules/ag-grid-community/dist/styles/ag-theme-alpine.css";
+
+.ag-theme-alpine,
+.ag-theme-alpine-dark {
+  @apply font-sans;
+}
 </style>
