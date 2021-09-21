@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
+import PurgeIcons from "vite-plugin-purge-icons";
 import path from "path";
 
 // https://vitejs.dev/config/
@@ -29,6 +30,17 @@ export default defineConfig({
           vuex: ["mapActions", "mapGetters", "mapState", "useStore"],
         },
       ],
+    }),
+    PurgeIcons({
+      content: [
+        "**/*.vue", // scan for .vue file as well
+      ],
+      // whitelist for icons that might be used dynamically
+      included: [
+        "mdi:account-circle-outline", // from Material Design Icons
+        "fa:camera", // from Font Awesome 4
+      ],
+      format: "mjs",
     }),
   ],
   resolve: {
