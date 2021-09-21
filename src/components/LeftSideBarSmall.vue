@@ -9,7 +9,7 @@
       leave-to-class="-translate-x-full opacity-0"
     >
       <nav
-        class="overflow-y-auto h-screen w-72 rounded-r-md bg-white dark:bg-blueGray-700 fixed top-0 left-0 pt-6 px-6 transition-all z-50"
+        class="overflow-y-auto h-screen w-72 rounded-r-2xl bg-white dark:bg-blueGray-700 fixed top-0 left-0 transition-all z-50"
         ref="nav"
         v-if="modelValue"
       >

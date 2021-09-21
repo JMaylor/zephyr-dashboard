@@ -9,7 +9,7 @@
 
     <div
       class="pt-24 p-4 transition-all space-y-4 flex flex-col min-h-screen"
-      :class="{ 'lg:ml-72 lg:pl-8': open && lgAndLarger }"
+      :class="{ 'lg:pl-80': open && lgAndLarger }"
     >
       <main class="flex-grow">
         <slot />
