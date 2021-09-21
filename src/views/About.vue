@@ -55,6 +55,7 @@
         <a href="https://www.ag-grid.com/" target="_blank">Ag Grid</a>, along with examples of how we can use dark mode with these packages.
       </li>
     </ul>
+    <p>The design is based on <a href="https://www.primefaces.org/sakai-vue/" target="_blank">Sakai Vue</a> so thanks to PrimeVue.</p> Also credit <a href="https://undraw.co/" target="_blank">undraw.co</a> for the main image on the entry page.
   </DashboardCard>
 </template>
 
