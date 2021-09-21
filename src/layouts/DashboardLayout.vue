@@ -12,7 +12,7 @@
       :class="{ 'lg:ml-72 lg:pl-8': open && lgAndLarger }"
     >
       <main class="flex-grow">
-        <slot :isDark="isDark" />
+        <slot />
       </main>
       <footer class="w-full pt-2 border-t border-gray-300 text-center">Hi I'm the footer</footer>
     </div>
@@ -29,4 +29,5 @@ const open = ref(false)
 
 const isDark = useDark()
 const toggleDark = useToggle(isDark)
+provide('isDark', isDark)
 </script>

@@ -1,7 +1,7 @@
 <template>
   <v-calendar
     is-expanded
-    class="col-span-12 sm:col-span-6 xl:col-span-4 shadow-md rounded-md border-0"
+    class="col-span-12 sm:col-span-6 shadow-md rounded-md border-0"
     :attributes="attributes"
     :is-dark="isDark"
   />
@@ -11,9 +11,8 @@
 const today = new Date()
 const month = today.getMonth()
 const year = today.getFullYear()
-defineProps({
-  isDark: Boolean
-})
+
+const isDark = inject('isDark')
 
 const meetings = [
   {

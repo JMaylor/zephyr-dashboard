@@ -11,6 +11,8 @@
     "@vueuse/core": "^6.4.1",
     "@vueuse/motion": "^2.0.0-beta.1",
     "@vueuse/shared": "^6.4.1",
+    "ag-grid-community": "^26.0.0",
+    "ag-grid-vue3": "^26.0.1",
     "v-calendar": "^3.0.0-alpha.5",
     "vue": "^3.2.6",
     "vue-chart-3": "^0.5.8",
