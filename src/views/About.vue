@@ -50,7 +50,7 @@
           href="https://vcalendar.io/"
           target="_blank"
         >v-calendar</a>,
-        <a href="https://vue-chart-3.netlify.app/" target="_blank">vue-chart-3</a>(a
+        <a href="https://vue-chart-3.netlify.app/" target="_blank">vue-chart-3</a> (a
         <a href="https://www.chartjs.org/" target="_blank">Chart.js</a> wrapper) and
         <a href="https://www.ag-grid.com/" target="_blank">Ag Grid</a>, along with examples of how we can use dark mode with these packages.
       </li>
