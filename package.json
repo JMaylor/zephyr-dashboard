@@ -27,6 +27,7 @@
     "@vue/compiler-sfc": "^3.2.6",
     "autoprefixer": "^10.3.4",
     "postcss": "^8.3.6",
+    "sass": "^1.42.0",
     "tailwindcss": "^2.2.15",
     "unplugin-auto-import": "^0.4.6",
     "unplugin-vue-components": "^0.15.2",
