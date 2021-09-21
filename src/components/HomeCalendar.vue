@@ -1,7 +1,7 @@
 <template>
   <v-calendar
     is-expanded
-    class="col-span-12 sm:col-span-6 shadow-md rounded-md border-0"
+    class="col-span-12 sm:col-span-6"
     :attributes="attributes"
     :is-dark="isDark"
   />
@@ -98,3 +98,13 @@ const attributes = computed(() => {
 })
 
 </script>
+
+<style>
+.vc-container {
+  @apply shadow-md rounded-md border-0;
+}
+
+.vc-container.vc-is-dark {
+  @apply bg-white dark:bg-trueGray-900;
+}
+</style>
