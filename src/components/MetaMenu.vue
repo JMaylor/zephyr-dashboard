@@ -22,7 +22,7 @@
     </button>
     <ul
       v-if="showMetaMenu"
-      class="absolute top-16 right-0 p-4 rounded-lg bg-white dark:bg-blueGray-700 shadow-md space-y-4 z-50"
+      class="absolute top-16 right-0 p-4 rounded-lg bg-white dark:bg-trueGray-800 shadow-md space-y-4 z-50"
     >
       <CalendarIcon class="h-6" />
       <CogIcon class="h-6" />

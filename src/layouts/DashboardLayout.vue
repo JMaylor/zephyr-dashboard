@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-blueGray-200 dark:bg-black text-coolGray-700 dark:text-white min-w-screen min-h-screen h-full"
+    class="bg-blueGray-200 dark:bg-black text-gray-700 dark:text-white min-w-screen min-h-screen h-full"
     :class="{ dark: isDark }"
   >
     <HeaderBar v-model="open" @toggleDark="toggleDark" />

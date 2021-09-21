@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .vc-container.vc-is-dark {
-  @apply bg-white dark:bg-coolGray-900
+  @apply bg-white dark:bg-trueGray-900
 }
