@@ -6,7 +6,7 @@
           <AuthAcceptTerms class="w-full" />
         </div>
         <div
-          class="p-8 bg-white dark:bg-trueGray-900 dark:text-white rounded-b-2xl md:rounded-l-none md:rounded-r-2xl"
+          class="p-8 bg-white dark:bg-zinc-900 dark:text-white rounded-b-2xl md:rounded-l-none md:rounded-r-2xl"
         >
           <div class="flex justify-center items-center h-full">
             <router-link

@@ -13,7 +13,7 @@
       <DashboardCard>
         <div class="flex flex-col space-y-4">
           <div class="flex justify-between">
-            <span class="font-bold text-trueGray-500">Weekly Revenue</span>
+            <span class="font-bold text-zinc-500">Weekly Revenue</span>
             <div class="p-2 bg-green-300 rounded-lg">
               <span class="iconify h-6 w-6 text-green-800" data-icon="heroicons-outline:cash"></span>
             </div>

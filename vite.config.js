@@ -35,11 +35,6 @@ export default defineConfig({
       content: [
         "**/*.vue", // scan for .vue file as well
       ],
-      // whitelist for icons that might be used dynamically
-      included: [
-        "mdi:account-circle-outline", // from Material Design Icons
-        "fa:camera", // from Font Awesome 4
-      ],
       format: "mjs",
     }),
   ],

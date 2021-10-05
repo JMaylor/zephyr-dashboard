@@ -3,5 +3,13 @@
 </template>
 
 <script setup>
-const isDark = useDark()
+const isDark = useDark();
 </script>
+
+<style>
+html,
+body,
+#app {
+  @apply h-full;
+}
+</style>

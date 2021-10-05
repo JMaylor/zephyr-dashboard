@@ -105,6 +105,6 @@ const attributes = computed(() => {
 }
 
 .vc-container.vc-is-dark {
-  @apply bg-white dark:bg-trueGray-900;
+  @apply bg-white dark:bg-zinc-900;
 }
 </style>
