@@ -34,7 +34,12 @@
         </div></z-icon-button
       >
       <z-icon-button icon="heroicons-outline:cog" />
-      <z-icon-button icon="heroicons-outline:user" />
+      <z-icon-button
+        component="router-link"
+        exact-active-class="bg-teal-800 text-zinc-200"
+        to="/dashboard/calendar"
+        icon="heroicons-outline:user"
+      />
     </div>
   </header>
 </template>

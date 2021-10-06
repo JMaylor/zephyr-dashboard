@@ -1,7 +1,7 @@
 <template>
-  <button
+  <component :is="component"
     v-wave
-    class="w-10 h-10 focus:outline-none focus-visible:ring rounded-full"
+    class="w-10 h-10 focus:outline-none focus-visible:ring rounded-full transition-colors"
   >
     <span
       v-if="icon"
@@ -9,13 +9,17 @@
       :data-icon="icon"
     ></span>
     <slot />
-  </button>
+  </component>
 </template>
 
 <script setup>
 defineProps({
   icon: {
     type: String,
+  },
+  component: {
+    type: String,
+    default: "button",
   },
 });
 </script>
