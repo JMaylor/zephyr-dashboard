@@ -1,5 +1,5 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" class="text-teal-600">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" class="text-teal-800">
     <rect x="151.9" y="54.63" width="191.86" height="156.59" fill="#e6e6e6" />
     <rect x="182.71" y="144.02" width="65.12" height="40.88" fill="#fff" opacity="0.35" />
     <polygon
