@@ -17,22 +17,7 @@
       </z-icon-button>
     </div>
     <div class="flex space-x-4 items-center">
-      <z-icon-button icon="heroicons-outline:bell" class="relative"
-        ><div
-          class="
-            absolute
-            right-1
-            top-1
-            w-4
-            h-4
-            bg-red-600
-            rounded-full
-            text-xs text-zinc-100
-          "
-        >
-          3
-        </div></z-icon-button
-      >
+      <notifications-popover />
       <z-icon-button icon="heroicons-outline:cog" />
       <z-icon-button
         component="router-link"
