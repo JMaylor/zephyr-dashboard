@@ -89,5 +89,10 @@ const navLinks = [
     to: "/dashboard/about",
     icon: "heroicons-outline:information-circle",
   },
+  {
+    text: "Calendar",
+    to: "/dashboard/calendar",
+    icon: "heroicons-outline:calendar",
+  },
 ];
 </script>

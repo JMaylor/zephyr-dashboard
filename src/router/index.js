@@ -15,6 +15,10 @@ const router = createRouter({
           component: () => import("@/views/Home.vue"),
         },
         {
+          path: "/dashboard/calendar",
+          component: () => import("@/views/Calendar.vue"),
+        },
+        {
           path: "/dashboard/about",
           component: () => import("@/views/About.vue"),
         },
