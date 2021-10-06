@@ -1,7 +1,7 @@
 <template>
   <component :is="component"
     v-wave
-    class="w-10 h-10 focus:outline-none focus-visible:ring rounded-full transition-colors"
+    class="w-10 h-10 focus:outline-none focus-visible:ring focus-visible:ring-teal-500 rounded-full transition-colors"
   >
     <span
       v-if="icon"
