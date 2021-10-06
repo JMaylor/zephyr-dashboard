@@ -16,25 +16,11 @@ export default defineConfig({
       deep: true,
     }),
     AutoImport({
-      include: [
-        /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
-        /\.vue\??/, // .vue
-      ],
-      imports: [
-        // presets
-        "vue",
-        "vue-router",
-        "@vueuse/core",
-        // custom
-        {
-          vuex: ["mapActions", "mapGetters", "mapState", "useStore"],
-        },
-      ],
+      include: [/\.[tj]sx?$/, /\.vue\??/],
+      imports: ["vue", "vue-router", "@vueuse/core"],
     }),
     PurgeIcons({
-      content: [
-        "**/*.vue", // scan for .vue file as well
-      ],
+      content: ["**/*.vue"],
       format: "mjs",
     }),
   ],

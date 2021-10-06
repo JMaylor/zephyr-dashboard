@@ -1,3 +1,3 @@
 <template>
-  <footer class="border-t text-center">footer content</footer>
+  <footer class="text-center p-4">footer content</footer>
 </template>

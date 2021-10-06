@@ -1,41 +1,41 @@
 <template>
-  <header
-    class="
-      bg-green-500
-      dark:bg-gray-600
-      border-b
-      sticky
-      top-0
-      flex
-      justify-between
-      px-4
-      z-30
-      items-center
-    "
-  >
+  <header class="sticky top-0 flex justify-between p-4 z-30 items-center">
     <div class="flex space-x-4 items-center">
-      <button
-        class="
-          w-10
-          h-10
-          relative
-          focus:outline-none
-          focus-visible:ring
-          rounded-full
-        "
+      <z-icon-button
         @click="$emit('update:modelValue', !modelValue)"
-      >
-        <span class="sr-only">Open main menu</span>
-        menu
-      </button>
-      <button @click="$emit('toggleDark')">
-        <span class="iconify" data-icon="fa:home"></span>
-      </button>
+        icon="heroicons-outline:menu"
+      />
+      <z-icon-button @click="$emit('toggleDark')">
+        <span
+          class="iconify w-full h-full p-2 dark:hidden"
+          data-icon="heroicons-outline:sun"
+        ></span>
+        <span
+          class="iconify w-full h-full p-2 hidden dark:block"
+          data-icon="heroicons-outline:moon"
+        ></span>
+      </z-icon-button>
     </div>
-    <BrandLogo class="absolute left-1/2 transform -translate-x-1/2" />
-    <ul class="flex space-x-6">
-      notifications, cog, user
-    </ul>
+    <div class="flex space-x-4 items-center">
+      <z-icon-button icon="heroicons-outline:bell" class="relative"
+        ><div
+          class="
+            absolute
+            right-1
+            top-1
+            w-4
+            h-4
+            bg-red-600
+            rounded-full
+            text-xs text-zinc-100
+          "
+        >
+          3
+        </div></z-icon-button
+      >
+      <z-icon-button icon="heroicons-outline:cog" />
+      <z-icon-button icon="heroicons-outline:user" />
+    </div>
   </header>
 </template>
 

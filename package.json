@@ -10,6 +10,7 @@
     "docs:serve": "vitepress serve docs"
   },
   "dependencies": {
+    "@headlessui/vue": "^1.4.1",
     "@iconify/iconify": "^2.0.4",
     "@vueuse/core": "^6.4.1",
     "@vueuse/motion": "^2.0.0-beta.1",
