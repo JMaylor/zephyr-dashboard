@@ -1,18 +1,15 @@
 <template>
-  <div
-    class="
-      flex
-      min-h-full
-      bg-zinc-200
-      dark:bg-zinc-800
-      text-zinc-800
-      dark:text-zinc-200
-      transition-colors
-    "
-  >
+  <div class="flex min-h-full transition-colors">
     <NavigationDrawer v-model="open" />
     <div
-      class="flex flex-grow flex-col transition-spacing"
+      class="
+        flex flex-grow flex-col
+        transition-spacing
+        bg-zinc-100
+        dark:bg-zinc-900
+        text-zinc-900
+        dark:text-zinc-100
+      "
       :class="{ 'lg:pl-64': open }"
     >
       <AppTopBar v-model="open" @toggleDark="toggleDark" />
