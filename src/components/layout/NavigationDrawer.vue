@@ -25,9 +25,12 @@
       v-if="modelValue"
       ref="navContainer"
       class="
-        shadow-2xl
+        nav-container
+        bg-cover
+        shadow
         dark:shadow-none
-        border-zinc-100
+        bg-zinc-900
+        text-zinc-100
         h-full
         fixed
         w-64
@@ -38,24 +41,39 @@
         justify-between
       "
     >
-      <div class="divide-y divide-zinc-800 dark:divide-zinc-200">
-        <a href="https://maylor.io" target="_blank" class="block pb-4"
-          >maylor.io</a
-        >
+      <div class="divide-y divide-zinc-100">
+        <a
+          v-wave
+          href="https://maylor.io"
+          target="_blank"
+          class="nav-button mb-4"
+          >maylor.io<span
+            class="iconify ml-2"
+            data-icon="heroicons-outline:external-link"
+          ></span
+        ></a>
         <nav class="pt-4 space-y-2 flex flex-col">
           <router-link
             v-for="{ text, to, icon } in navLinks"
             v-wave
-            class="p-4 rounded transition-colors flex"
-            exact-active-class="bg-teal-800 text-zinc-200"
+            class="nav-button"
+            exact-active-class="bg-teal-800 text-zinc-100"
             :to="to"
           >
             <span class="iconify w-6 h-6 mr-2" :data-icon="icon"></span>
-            <span>{{ text }}</span></router-link
-          >
+            <span>{{ text }}</span>
+          </router-link>
         </nav>
       </div>
-      <div>nav footer</div>
+      <router-link
+        v-wave
+        class="nav-button"
+        exact-active-class="bg-teal-800 text-zinc-100"
+        to="/"
+      >
+        <span class="iconify w-6 h-6 mr-2" data-icon="heroicons-outline:logout"></span>
+        <span>Sign Out</span>
+      </router-link>
     </div>
   </transition>
 </template>
@@ -94,5 +112,21 @@ const navLinks = [
     to: "/dashboard/calendar",
     icon: "heroicons-outline:calendar",
   },
+  {
+    text: "Profile",
+    to: "/dashboard/profile",
+    icon: "heroicons-outline:user",
+  },
 ];
 </script>
+
+<style scoped>
+.nav-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://images.unsplash.com/photo-1632213702844-1e0615781374?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1632&q=80");
+}
+
+.nav-button {
+  @apply p-4 rounded transition-colors flex items-center focus:outline-none focus:ring-1 focus:ring-teal-500;
+}
+</style>
