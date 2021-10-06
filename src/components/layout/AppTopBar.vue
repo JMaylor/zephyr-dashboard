@@ -36,8 +36,8 @@
       <z-icon-button icon="heroicons-outline:cog" />
       <z-icon-button
         component="router-link"
-        exact-active-class="bg-teal-800 text-zinc-200"
-        to="/dashboard/calendar"
+        exact-active-class="bg-teal-800 text-zinc-100"
+        to="/dashboard/profile"
         icon="heroicons-outline:user"
       />
     </div>
