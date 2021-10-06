@@ -27,7 +27,7 @@
       class="
         nav-container
         bg-cover
-        shadow
+        shadow-lg
         dark:shadow-none
         bg-zinc-900
         text-zinc-100
