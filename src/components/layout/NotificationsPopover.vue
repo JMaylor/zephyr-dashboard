@@ -45,7 +45,8 @@
           absolute
           top-12
           -right-28
-          w-96
+          w-72
+          md:w-96
           bg-teal-800
           text-zinc-100
           rounded
