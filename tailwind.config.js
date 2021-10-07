@@ -6,12 +6,6 @@ module.exports = {
       transitionProperty: {
         spacing: "margin, padding",
       },
-      // height: {
-      //   header: "calc(100vh - 7rem)",
-      // },
-      // fontFamily: {
-      //   sans: ["BlinkMacSystemFont", "ui-sans-serif", "system-ui"],
-      // },
     },
   },
   variants: {
