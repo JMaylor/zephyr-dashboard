@@ -1,5 +1,5 @@
 <template>
-  <header class="sticky top-0 flex justify-between p-4 z-30 items-center">
+  <header class="sticky top-0 flex justify-between p-4 z-30 items-center backdrop-blur">
     <div class="flex space-x-4 items-center">
       <z-icon-button
         @click="$emit('update:modelValue', !modelValue)"
