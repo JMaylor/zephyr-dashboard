@@ -16,9 +16,22 @@ const columnDefs = [
     field: "country",
     cellRendererFramework: FlagCellRenderer,
     editable: false,
+    minWidth: 200,
   },
-  { field: "athlete", flex: 1 },
-  { field: "sport", flex: 1 },
+  {
+    field: "athlete",
+    flex: 1,
+    minWidth: 200,
+  },
+  {
+    field: "sport",
+    flex: 1,
+    minWidth: 200,
+  },
+  {
+    field: "year",
+    filter: "agNumberColumnFilter",
+  },
   {
     field: "age",
     filter: "agNumberColumnFilter",
@@ -39,6 +52,12 @@ const columnDefs = [
   },
   {
     field: "gold",
+    filter: "agNumberColumnFilter",
+    type: "numericColumn",
+    width: 120,
+  },
+  {
+    field: "total",
     filter: "agNumberColumnFilter",
     type: "numericColumn",
     width: 120,
