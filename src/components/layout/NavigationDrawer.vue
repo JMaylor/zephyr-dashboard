@@ -90,6 +90,8 @@ defineProps({
 const emit = defineEmits(["update:modelValue"]);
 const navContainer = ref(null);
 
+// TODO - switch focus to nav drawer when it is opened with keyboard ?
+
 const breakpoints = useBreakpoints(breakpointsTailwind);
 const lgAndLarger = breakpoints.greater("lg");
 onClickOutside(navContainer, () => {
@@ -111,6 +113,11 @@ const navLinks = [
     text: "Calendar",
     to: "/dashboard/calendar",
     icon: "heroicons-outline:calendar",
+  },
+  {
+    text: "Table",
+    to: "/dashboard/table",
+    icon: "heroicons-outline:table",
   },
   {
     text: "Profile",
