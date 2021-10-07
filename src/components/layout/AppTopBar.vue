@@ -5,7 +5,7 @@
         @click="$emit('update:modelValue', !modelValue)"
         icon="heroicons-outline:menu"
       />
-      <z-icon-button @click="$emit('toggleDark')">
+      <z-icon-button @click="$emit('toggleDark')" data-cy="dark-mode-toggle">
         <span
           class="iconify w-full h-full p-2 dark:hidden"
           data-icon="heroicons-outline:sun"
