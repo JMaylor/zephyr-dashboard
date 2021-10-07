@@ -83,8 +83,4 @@ onMounted(() =>
     )
   );
 }
-
-.ag-body-horizontal-scroll-viewport {
-  @apply overflow-x-auto;
-}
 </style>
