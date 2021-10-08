@@ -101,7 +101,7 @@ const attributes = computed(() => {
 
 <style>
 .vc-container {
-  @apply shadow-md rounded-md border-0;
+  @apply shadow-lg rounded-md border-0;
 }
 
 .vc-container.vc-is-dark {

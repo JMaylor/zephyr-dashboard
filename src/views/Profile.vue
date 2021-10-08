@@ -3,7 +3,7 @@
     <img
       :src="`https://avatars.dicebear.com/api/avataaars/${user.name.first}.svg?radius=50`"
       alt="avatar"
-      class="w-72 h-72 drop-shadow"
+      class="w-72 h-72 drop-shadow-lg"
     />
   </div>
 </template>
