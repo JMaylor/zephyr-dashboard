@@ -110,6 +110,11 @@ const navLinks = [
     icon: "heroicons-outline:information-circle",
   },
   {
+    text: "Form",
+    to: "/dashboard/form",
+    icon: "heroicons-outline:clipboard-list",
+  },
+  {
     text: "Calendar",
     to: "/dashboard/calendar",
     icon: "heroicons-outline:calendar",
