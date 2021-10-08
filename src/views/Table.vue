@@ -22,7 +22,7 @@ function onFirstDataRendered(params) {
   columnApi.value = params.columnApi;
 }
 
-const context = ref({ foo: "bar" });
+const context = ref({});
 
 let rowData = ref([]);
 onMounted(() =>
