@@ -19,7 +19,6 @@
           dark:bg-black
           rounded-lg
           shadow-lg
-          cursor-default
           focus:outline-none
           focus-visible:ring-2
           focus-visible:ring-opacity-75
@@ -83,9 +82,9 @@
             <li
               :class="[
                 active
-                  ? 'text-teal-800 dark:text-teal-500 bg-teal-500 bg-opacity-30'
+                  ? 'text-teal-800 dark:text-teal-100 bg-teal-500 bg-opacity-30'
                   : 'text-zinc-900 dark:text-zinc-100',
-                'cursor-default select-none relative py-2 pl-10 pr-4',
+                'cursor-pointer relative py-2 pl-4 pr-10',
               ]"
             >
               <span
@@ -100,10 +99,10 @@
                 class="
                   absolute
                   inset-y-0
-                  left-0
+                  right-0
                   flex
                   items-center
-                  pl-3
+                  pr-3
                   text-teal-800
                   dark:text-teal-500
                 "
