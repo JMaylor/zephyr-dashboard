@@ -13,6 +13,7 @@
       label="Gender"
       :items="genders"
       v-model="user.gender"
+      itemText="text"
     />
     <ZTextarea class="col-span-12" label="Bio" v-model="user.bio" />
   </form>
@@ -20,7 +21,11 @@
 
 <script setup>
 const titles = ["Mr", "Mrs", "Miss", "Ms", "Dr"];
-const genders = ["Male", "Female", "Other"];
+const genders = [
+  { text: "Male", icon: "mdi:gender-male" },
+  { text: "Female", icon: "mdi:gender-female" },
+  { text: "Other", icon: "mdi:gender-non-binary" },
+];
 
 const user = ref({
   title: null,

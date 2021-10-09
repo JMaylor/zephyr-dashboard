@@ -28,7 +28,26 @@
           sm:text-sm
         "
       >
-        <span class="block truncate h-6 sm:h-5">{{
+        <span
+          v-if="modelValue?.icon"
+          class="
+            absolute
+            inset-y-0
+            left-0
+            flex
+            items-center
+            pl-2
+            text-teal-800
+            dark:text-teal-500
+          "
+        >
+          <span
+            class="iconify w-5 h-5"
+            aria-hidden="true"
+            :data-icon="modelValue.icon"
+          ></span>
+        </span>
+        <span class="block truncate h-6 sm:h-5" :class="modelValue?.icon ? 'pl-6' : ''">{{
           itemText ? modelValue?.[itemText] ?? "" : modelValue
         }}</span>
         <span
@@ -86,9 +105,28 @@
                 active
                   ? 'text-teal-800 dark:text-teal-100 bg-teal-500 bg-opacity-30'
                   : 'text-zinc-900 dark:text-zinc-100',
-                'cursor-pointer relative py-2 pl-4 pr-10',
+                item.icon ? 'pl-10' : 'pl-4',
+                'cursor-pointer relative py-2 pr-10',
               ]"
             >
+              <span
+                class="
+                  absolute
+                  inset-y-0
+                  left-0
+                  flex
+                  items-center
+                  pl-3
+                  text-teal-800
+                  dark:text-teal-500
+                "
+              >
+                <span
+                  class="iconify w-5 h-5"
+                  aria-hidden="true"
+                  :data-icon="item.icon"
+                ></span>
+              </span>
               <span
                 :class="[
                   selected ? 'font-medium' : 'font-normal',
