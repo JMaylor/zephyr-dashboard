@@ -32,21 +32,14 @@
       <span
         v-if="modelValue?.icon"
         class="
-          transition
-          relative
-          w-full
-          py-2
-          pl-3
-          pr-10
-          text-left
-          bg-zinc-50
-          dark:bg-black
-          rounded-lg
-          shadow-lgW
-          focus:outline-none focus:ring-2
-          ring-opacity-75 ring-teal-800
-          dark:ring-teal-500
-          sm:text-sm
+          absolute
+            inset-y-0
+            left-0
+            flex
+            items-center
+            pl-2
+            text-teal-800
+            dark:text-teal-500
         "
       >
         <span
