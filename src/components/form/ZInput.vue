@@ -1,6 +1,7 @@
 <template>
   <label :for="id" class="pl-2 py-2 block h-8 sm:text-sm"
-    >{{ label }}<span v-if="required" class="text-red-600 font-medium">*</span></label
+    >{{ label
+    }}<span v-if="required" class="text-red-500 font-medium">*</span></label
   >
   <Field
     v-bind="$attrs"
@@ -23,7 +24,7 @@
       sm:text-sm
     "
   />
-  <span class="pl-2 block h-8 sm:text-sm text-red-700">
+  <span class="pl-2 block h-8 sm:text-sm text-red-500">
     <ErrorMessage :name="name" />
   </span>
 </template>
@@ -36,17 +37,10 @@ defineProps({
     type: String,
     required: false,
   },
-  // type: {
-  //   type: String,
-  //   default: "text",
-  // },
   name: {
     type: String,
     required: true,
   },
-  // rules: {
-  //   required: false,
-  // },
   required: {
     type: Boolean,
     default: false,

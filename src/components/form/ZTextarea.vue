@@ -19,7 +19,7 @@
         rounded-lg
         shadow-lg
         focus:outline-none
-        focus-visible:ring-2
+        focus:ring-2
         ring-opacity-75
         ring-teal-800
         dark:ring-teal-500
