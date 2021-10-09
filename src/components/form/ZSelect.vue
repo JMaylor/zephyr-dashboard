@@ -4,7 +4,7 @@
     @update:modelValue="$emit('update:modelValue', $event)"
   >
     <div class="relative mt-1">
-      <ListboxLabel class="pl-2 py-2 block h-8 sm:text-sm">{{
+      <ListboxLabel class="pl-2 py-2 block h-8 sm:text-sm z-0">{{
         label
       }}</ListboxLabel>
       <ListboxButton
@@ -71,6 +71,7 @@
             ring-1 ring-black ring-opacity-5
             focus:outline-none
             sm:text-sm
+            z-10
           "
         >
           <ListboxOption
