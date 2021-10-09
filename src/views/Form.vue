@@ -3,13 +3,6 @@
     @submit="onSubmit"
     class="grid grid-cols-12 gap-3 mx-auto max-w-screen-xl"
   >
-    <ZSelect
-      class="form-col"
-      label="Title"
-      name="title"
-      :items="titles"
-      v-model="user.title"
-    />
     <div class="form-col">
       <ZInput
         name="forename"
@@ -54,7 +47,6 @@ function onSubmit(values) {
 }
 
 const user = ref({
-  title: null,
   forename: null,
   surname: null,
   gender: null,
@@ -77,7 +69,6 @@ function validateEmail(value) {
 }
 
 // options for inputs
-const titles = ["Mr", "Mrs", "Miss", "Ms", "Dr"];
 const genders = [
   { text: "Male", icon: "mdi:gender-male" },
   { text: "Female", icon: "mdi:gender-female" },
