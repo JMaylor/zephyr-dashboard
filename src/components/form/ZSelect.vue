@@ -21,10 +21,10 @@
           rounded-lg
           shadow-lg
           focus:outline-none
-          focus-visible:ring-2
-          focus-visible:ring-opacity-75
-          focus-visible:ring-teal-800
-          dark:focus-visible:ring-teal-500
+          focus:ring-2
+          focus:ring-opacity-75
+          focus:ring-teal-800
+          dark:focus:ring-teal-500
           sm:text-sm
         "
       >
