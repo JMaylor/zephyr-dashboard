@@ -17,7 +17,14 @@ export default defineConfig({
     }),
     AutoImport({
       include: [/\.[tj]sx?$/, /\.vue\??/],
-      imports: ["vue", "vue-router", "@vueuse/core"],
+      imports: [
+        "vue",
+        "vue-router",
+        "@vueuse/core",
+        {
+          nanoid: ["nanoid"],
+        },
+      ],
     }),
     PurgeIcons({
       content: ["**/*.vue"],

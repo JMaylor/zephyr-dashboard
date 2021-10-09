@@ -1,7 +1,8 @@
 <template>
   <div class="z-input mt-1">
-    <label class="pl-2 py-2 block h-8 sm:text-sm">{{ label }}</label>
+    <label :for="id" class="pl-2 py-2 block h-8 sm:text-sm">{{ label }}</label>
     <input
+      :id="id"
       @input="$emit('update:modelValue', $event.target.value)"
       class="
         w-full
@@ -33,4 +34,6 @@ defineProps({
     required: true,
   },
 });
+
+const id = nanoid();
 </script>
