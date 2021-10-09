@@ -1,5 +1,5 @@
 <template>
-  <div class="z-input mt-1">
+  <div>
     <label :for="id" class="pl-2 py-2 block h-8 sm:text-sm">{{ label }}</label>
     <textarea
     placeholder="Tell me something about you!"
