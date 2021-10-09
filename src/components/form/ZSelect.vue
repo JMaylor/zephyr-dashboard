@@ -9,6 +9,7 @@
       }}</ListboxLabel>
       <ListboxButton
         class="
+          transition-all
           relative
           w-full
           py-2

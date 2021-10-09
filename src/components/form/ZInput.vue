@@ -6,6 +6,7 @@
       @input="$emit('update:modelValue', $event.target.value)"
       class="
         w-full
+        transition-all
         py-2
         px-3
         text-left
