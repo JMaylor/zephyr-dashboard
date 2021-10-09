@@ -6,7 +6,7 @@
       @input="$emit('update:modelValue', $event.target.value)"
       class="
         w-full
-        transition-all
+        transition
         py-2
         px-3
         text-left
@@ -15,10 +15,10 @@
         rounded-lg
         shadow-lg
         focus:outline-none
-        focus-visible:ring-2
-        focus-visible:ring-opacity-75
-        focus-visible:ring-teal-800
-        dark:focus-visible:ring-teal-500
+        focus:ring-2
+        ring-opacity-75
+        ring-teal-800
+        dark:ring-teal-500
         sm:text-sm
       "
     />

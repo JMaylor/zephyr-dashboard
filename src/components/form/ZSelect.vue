@@ -9,7 +9,7 @@
       }}</ListboxLabel>
       <ListboxButton
         class="
-          transition-all
+          transition
           relative
           w-full
           py-2
@@ -20,11 +20,9 @@
           dark:bg-black
           rounded-lg
           shadow-lg
-          focus:outline-none
-          focus:ring-2
-          focus:ring-opacity-75
-          focus:ring-teal-800
-          dark:focus:ring-teal-500
+          focus:outline-none focus:ring-2
+          ring-opacity-75 ring-teal-800
+          dark:ring-teal-500
           sm:text-sm
         "
       >
@@ -47,9 +45,11 @@
             :data-icon="modelValue.icon"
           ></span>
         </span>
-        <span class="block truncate h-6 sm:h-5" :class="modelValue?.icon ? 'pl-6' : ''">{{
-          itemText ? modelValue?.[itemText] ?? "" : modelValue
-        }}</span>
+        <span
+          class="block truncate h-6 sm:h-5"
+          :class="modelValue?.icon ? 'pl-6' : ''"
+          >{{ itemText ? modelValue?.[itemText] ?? "" : modelValue }}</span
+        >
         <span
           class="
             absolute
