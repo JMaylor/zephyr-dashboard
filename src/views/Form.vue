@@ -14,6 +14,7 @@
       :items="genders"
       v-model="user.gender"
     />
+    <ZTextarea class="col-span-12" label="Bio" v-model="user.bio" />
   </form>
 </template>
 
@@ -26,6 +27,7 @@ const user = ref({
   forename: null,
   surname: null,
   gender: null,
+  bio: null,
 });
 </script>
 
