@@ -20,7 +20,7 @@
           dark:bg-black
           rounded-lg
           shadow-lg
-          focus:outline-none focus:ring-2
+          focus:outline-none focus-visible:ring-2
           ring-opacity-75 ring-teal-800
           dark:ring-teal-500
           sm:text-sm
