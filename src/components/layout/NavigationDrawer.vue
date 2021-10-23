@@ -47,11 +47,11 @@
           href="https://maylor.io"
           target="_blank"
           class="nav-button mb-4"
-          >maylor.io<span
-            class="iconify ml-2"
+          ><span
+            class="iconify w-6 h-6 mr-2"
             data-icon="heroicons-outline:external-link"
           ></span
-        ></a>
+        >maylor.io</a>
         <nav class="pt-4 space-y-2 flex flex-col">
           <router-link
             v-for="{ text, to, icon } in navLinks"
@@ -65,15 +65,31 @@
           </router-link>
         </nav>
       </div>
-      <router-link
-        v-wave
-        class="nav-button"
-        exact-active-class="bg-teal-800 text-zinc-100"
-        to="/"
-      >
-        <span class="iconify w-6 h-6 mr-2" data-icon="heroicons-outline:logout"></span>
-        <span>Sign Out</span>
-      </router-link>
+      <div class="flex flex-col">
+        <a
+          v-wave
+          class="nav-button"
+          href="https://github.com/JMaylor/zephyr-dashboard"
+          target="_blank"
+        >
+          <span
+            class="iconify w-6 h-6 mr-2"
+            data-icon="heroicons-outline:external-link"
+          ></span>
+          <span>GitHub</span>
+        </a>
+        <router-link
+          v-wave
+          class="nav-button"
+          to="/"
+        >
+          <span
+            class="iconify w-6 h-6 mr-2"
+            data-icon="heroicons-outline:logout"
+          ></span>
+          <span>Sign Out</span>
+        </router-link>
+      </div>
     </div>
   </transition>
 </template>
