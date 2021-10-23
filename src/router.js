@@ -1,38 +1,46 @@
 import { createRouter, createWebHistory } from "vue-router";
+import DashboardLayout from "./layouts/DashboardLayout.vue";
+import About from "./views/About.vue";
+import Auth from "./views/Auth.vue";
+import Calendar from "./views/Calendar.vue";
+import Form from "./views/Form.vue";
+import Home from "./views/Home.vue";
+import Profile from "./views/Profile.vue";
+import Table from "./views/Table.vue";
 
 const router = createRouter({
   routes: [
     {
       path: "/",
-      component: () => import("@/views/Auth.vue"),
+      component: Auth
     },
     {
       path: "/dashboard",
-      component: () => import("@/layouts/DashboardLayout.vue"),
+      component: DashboardLayout,
       children: [
         {
           path: "/dashboard",
-          component: () => import("@/views/Home.vue"),
+          component: Home
         },
         {
           path: "/dashboard/calendar",
-          component: () => import("@/views/Calendar.vue"),
+          component: Calendar
         },
         {
           path: "/dashboard/form",
-          component: () => import("@/views/Form.vue"),
+          component: Form
         },
         {
           path: "/dashboard/table",
-          component: () => import("@/views/Table.vue"),
+          component: Table
         },
         {
           path: "/dashboard/about",
-          component: () => import("@/views/About.vue"),
+          component: About
         },
         {
           path: "/dashboard/profile",
-          component: () => import("@/views/Profile.vue"),
+          component: Profile
         },
       ],
     },
