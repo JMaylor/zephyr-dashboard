@@ -17,6 +17,7 @@
         >Vue Router 4</a
       >.
     </li>
+    <li><a href="https://headlessui.dev/" target="_blank">Headless UI</a>.</li>
     <li><a href="https://next.vuex.vuejs.org/" target="_blank">Vuex 4</a>.</li>
     <li>
       <a href="https://vitejs.dev/" target="_blank">Vite</a>, for super fast
@@ -62,15 +63,6 @@
       with examples of how we can use dark mode with these packages.
     </li>
   </ul>
-  <p>
-    The design is based on
-    <a href="https://www.primefaces.org/sakai-vue/" target="_blank"
-      >Sakai Vue</a
-    >
-    so thanks to PrimeVue.
-  </p>
-  Also credit <a href="https://undraw.co/" target="_blank">undraw.co</a> for the
-  main image on the entry page.
 </template>
 
 <style scoped>
